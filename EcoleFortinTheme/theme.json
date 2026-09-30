@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false
+    },
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1920px"
+    },
+    "shadow": {
+      "defaultPresets": false
+    },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "bottom": "0px",
+        "left": "2rem",
+        "right": "2rem",
+        "top": "0px"
+      }
+    }
+  }
+}

@@ -47,6 +47,81 @@
 		"shadow": {
 			"defaultPresets": false
 		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-600-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Instrument Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/instrument-sans/instrument-sans-700-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Instrument Sans\", sans-serif",
+					"name": "Instrument Sans",
+					"slug": "instrument-sans"
+				}
+			]
+		},
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {

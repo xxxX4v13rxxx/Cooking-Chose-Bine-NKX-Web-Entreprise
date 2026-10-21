@@ -64,8 +64,8 @@
 		"spacing": {
 			"padding": {
 				"bottom": "0px",
-				"left": "2rem",
-				"right": "2rem",
+				"left": "0rem",
+				"right": "0rem",
 				"top": "0px"
 			}
 		}

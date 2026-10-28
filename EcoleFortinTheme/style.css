@@ -105,8 +105,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
 
 @media (max-width: 782px) {
     .ef-sidebar nav.ef-navigation:has(.is-menu-open) > .wp-block-navigation__responsive-container-open { display: none; }
-    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { width: 100%; align-self: stretch; background: var(--wp--preset--color--custom-color-5); color: var(--wp--preset--color--custom-color-1); }
-    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content { padding: 0; align-items: stretch; width: 100%; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { width: 100%; align-self: stretch; min-height: 110px; display: flex; flex-direction: column; background: var(--wp--preset--color--custom-color-5); color: var(--wp--preset--color--custom-color-1); }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content { padding: 0; flex: 1; justify-content: center; align-items: stretch; width: 100%; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 10px; width: 100%; font-size: 20px; position: static; margin: 0; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item { width: auto; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close { position: fixed; top: 21px; left: 26px; }

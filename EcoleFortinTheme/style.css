@@ -53,14 +53,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
 @media (min-width: 783px) and (max-width: 1100px) { :root { --ef-sidebar-width: 170px; } .ef-school p { font-size: 23px; } .ef-section-title { font-size: 30px; } }
 @media (max-width: 782px) {
     .ef-header { position: relative; inset: auto; width: 100%; overflow: visible; }
-    .ef-sidebar { min-height: 67px; padding: 11px 16px; display: flex; align-items: center; justify-content: center; }
+    .ef-sidebar { min-height: 67px; padding: 11px 0 0 0; display: flex; align-items: center; justify-content: center; }
     .ef-brand-desktop { display: none; }
     .ef-brand-mobile { display: flex; align-items: center; gap: 16px; }
     .ef-brand { margin: 0; }
     .ef-navigation { position: absolute; left: 20px; top: 20px; margin: 0; }
     .ef-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) { display: none; }
     .ef-navigation .wp-block-navigation__responsive-container-open { display: flex; }
-    .ef-navigation .is-menu-open { background: var(--wp--preset--color--custom-color-4); color: var(--wp--preset--color--custom-color-1); padding: 28px 20px; }
+    .ef-navigation .is-menu-open { background: var(--wp--preset--color--custom-color-5); color: var(--wp--preset--color--custom-color-1); padding: 28px 20px; }
     .ef-navigation .is-menu-open .wp-block-navigation__container { align-items: stretch; padding-top: 40px; gap: 16px; }
     .ef-main { margin-left: 0; }
     .ef-hero img { content: url('Images/piano-mobile.png'); aspect-ratio: 390 / 220; }
@@ -105,7 +105,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
 
 @media (max-width: 782px) {
     .ef-sidebar nav.ef-navigation:has(.is-menu-open) > .wp-block-navigation__responsive-container-open { display: none; }
-    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { width: 100%; align-self: stretch; background: var(--wp--preset--color--custom-color-4); color: var(--wp--preset--color--custom-color-1); }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { width: 100%; align-self: stretch; background: var(--wp--preset--color--custom-color-5); color: var(--wp--preset--color--custom-color-1); }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content { padding: 0; align-items: stretch; width: 100%; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 10px; width: 100%; font-size: 20px; position: static; margin: 0; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item { width: auto; }
@@ -145,4 +145,28 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
 @media (max-width: 782px) {
     .ef-layout.is-layout-flex { flex-direction: column; align-items: stretch; }
     .ef-layout.is-layout-flex > .ef-main { margin-left: 0; width: 100%; flex: 1 0 auto; }
+}
+/*Code ci-dessous à été fait par Claude.ai*/
+@media (max-width: 782px) {
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        z-index: 100001;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        color: var(--wp--preset--color--custom-color-1);
+        background: transparent;
+    }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close svg {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
 }

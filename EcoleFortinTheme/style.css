@@ -1,7 +1,148 @@
 /**
- * Theme Name:  EcoleFortinTheme
- * Description: Le thème Wordpress que j'ai créé pour mon site web.
- * Version:     1.0.0
- * Author:      Your Name
- * Author URI:  https://example.com
+ * Theme Name: EcoleFortinTheme
+ * Description: Blocs et compositions de l’École de musique Fortin.
+ * Version: 1.2.0
+ * Text Domain: ecolefortin
  */
+:root { --ef-sidebar-width: 197px; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--color--custom-color-2); outline-offset: 4px; }
+.wp-site-blocks { padding: 0; }
+.wp-site-blocks > *, .ef-layout > *, .ef-main > * { margin-block: 0; }
+.ef-layout { min-height: 100vh; }
+.ef-header { position: fixed; inset: 0 auto 0 0; width: var(--ef-sidebar-width); z-index: 20; background: var(--wp--preset--color--custom-color-4); overflow-y: auto; }
+.ef-sidebar { padding-top: 44px; min-height: 100%; }
+.ef-brand { display: block; width: fit-content; margin-inline: auto; }
+.ef-brand-desktop { display: block; }
+.ef-brand-mobile { display: none; }
+.ef-navigation { margin-top: 47px; color: var(--wp--preset--color--custom-color-1); font-size: 20px; font-weight: 400; }
+.ef-navigation .wp-block-navigation__container { width: 100%; gap: 30px; }
+.ef-navigation .wp-block-navigation-item { width: 100%; }
+.ef-navigation .wp-block-navigation-item__content { display: block; width: 100%; padding: 10px 8px; text-align: center; text-decoration: none; }
+.ef-navigation .wp-block-navigation-item__content:hover, .ef-navigation .current-menu-item > a { background: var(--wp--preset--color--custom-color-6); color: var(--wp--preset--color--custom-color-3); }
+.ef-main { margin-left: var(--ef-sidebar-width); min-width: 0; min-height: 100vh; }
+.ef-hero { width: 100%; margin: 0; overflow: hidden; }
+.ef-hero img { display: block; width: 100%; height: auto; aspect-ratio: 1243 / 879; object-fit: cover; object-position: top; }
+.ef-hero { position: relative; }
+.ef-hero::after { content: ''; position: absolute; bottom: 0; inset-inline: 0; height: 36px; background: linear-gradient(transparent, var(--wp--preset--color--custom-color-5)); pointer-events: none; }
+.ef-course-hero img { aspect-ratio: 1243 / 884; }
+.ef-section { width: min(100% - 80px, 946px); margin-inline: auto; }
+.ef-school { padding-top: 85px; }
+.ef-section-title { color: var(--wp--preset--color--custom-color-3); font-size: 36px; font-weight: 700; text-align: center; text-decoration: underline; text-underline-offset: .09em; line-height: 1.25; margin: 0 0 50px; }
+.ef-school p { font-size: 30px; font-weight: 500; line-height: 1.25; text-align: justify; margin: 0 0 30px; }
+.ef-school p:last-child { margin-bottom: 0; }
+.ef-location { padding-top: 115px; padding-bottom: 120px; width: min(100% - 80px, 1007px); }
+.ef-location .ef-section-title { margin-bottom: 76px; }
+.ef-location-grid { display: grid; grid-template-columns: 420fr 560fr; gap: 0 27px; align-items: start; }
+.ef-location-grid > * { margin: 0; min-width: 0; }
+.ef-map { grid-area: 1 / 1; }
+.ef-building { grid-area: 1 / 2; }
+.ef-map img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.ef-building img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.ef-address { grid-area: 2 / 1; font-family: sans-serif; font-size: 12px; line-height: 1.25; margin-top: 4px; }
+.ef-address br { display: none; }
+.ef-footer { padding: 12px 16px; background: var(--wp--preset--color--custom-color-1); font-size: 16px; line-height: 22px; }
+.ef-footer p { margin: 0; }
+.ef-page-content { padding-block: 85px; min-height: 55vh; }
+.ef-page-content p { line-height: 1.6; }
+.editor-styles-wrapper .ef-sidebar { min-height: auto; }
+@media (min-width: 1441px) { .ef-hero img { max-height: 879px; } }
+@media (min-width: 783px) { .ef-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) { display: block; } .ef-navigation .wp-block-navigation__responsive-container-open { display: none; } }
+@media (min-width: 783px) and (max-width: 1100px) { :root { --ef-sidebar-width: 170px; } .ef-school p { font-size: 23px; } .ef-section-title { font-size: 30px; } }
+@media (max-width: 782px) {
+    .ef-header { position: relative; inset: auto; width: 100%; overflow: visible; }
+    .ef-sidebar { min-height: 67px; padding: 11px 16px; display: flex; align-items: center; justify-content: center; }
+    .ef-brand-desktop { display: none; }
+    .ef-brand-mobile { display: flex; align-items: center; gap: 16px; }
+    .ef-brand { margin: 0; }
+    .ef-navigation { position: absolute; left: 20px; top: 20px; margin: 0; }
+    .ef-navigation .wp-block-navigation__responsive-container:not(.is-menu-open) { display: none; }
+    .ef-navigation .wp-block-navigation__responsive-container-open { display: flex; }
+    .ef-navigation .is-menu-open { background: var(--wp--preset--color--custom-color-4); color: var(--wp--preset--color--custom-color-1); padding: 28px 20px; }
+    .ef-navigation .is-menu-open .wp-block-navigation__container { align-items: stretch; padding-top: 40px; gap: 16px; }
+    .ef-main { margin-left: 0; }
+    .ef-hero img { content: url('Images/piano-mobile.png'); aspect-ratio: 390 / 220; }
+    .ef-course-hero img { content: normal; aspect-ratio: 1243 / 995; }
+    .ef-hero::after { height: 16px; }
+    .ef-section { width: calc(100% - 38px); }
+    .ef-school { padding-top: 32px; }
+    .ef-section-title { font-size: 18px; line-height: 27px; margin-bottom: 21px; }
+    .ef-school p { font-size: 14px; line-height: 22.75px; margin-bottom: 18px; }
+    .ef-location { width: calc(100% - 76px); padding-top: 28px; padding-bottom: 33px; }
+    .ef-location .ef-section-title { margin-bottom: 19px; white-space: nowrap; }
+    .ef-location-grid { grid-template-columns: 1.14fr 1fr; gap: 12px 19px; align-items: end; }
+    .ef-map { grid-area: 1 / 1; }
+    .ef-address { grid-area: 1 / 2; font-size: 12px; margin: 0; }
+    .ef-address br { display: block; }
+    .ef-building { grid-area: 2 / 1 / 3 / 3; }
+    .ef-footer { font-size: 16px; }
+    .ef-page-content { padding-block: 36px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+
+/* Compact navigation matches the open mobile prototype. */
+.ef-navigation .ef-current > a { background: var(--wp--preset--color--custom-color-6); color: var(--wp--preset--color--custom-color-3); }
+@media (max-width: 782px) {
+    .ef-header { position: sticky; top: 0; }
+    .ef-sidebar { flex-wrap: wrap; }
+    .ef-navigation { position: static; width: 100%; font-size: 20px; }
+    .ef-navigation .wp-block-navigation__responsive-container-open { position: absolute; top: 21px; left: 26px; }
+    .ef-navigation .wp-block-navigation__responsive-container.is-menu-open { position: static; min-height: 0; overflow: visible; padding: 0; margin-top: 20px; }
+    .ef-navigation .wp-block-navigation__responsive-close { max-width: none; width: 100%; }
+    .ef-navigation .wp-block-navigation__responsive-dialog { position: static; margin: 0; }
+    .ef-navigation .wp-block-navigation__responsive-container-close { position: absolute; left: 26px; right: auto; top: 21px; }
+    .ef-navigation .is-menu-open .wp-block-navigation__responsive-container-content { padding: 0; }
+    .ef-navigation .is-menu-open .wp-block-navigation__container { flex-flow: row wrap; justify-content: center; align-items: center; gap: 10px; padding: 0; }
+    .ef-navigation .is-menu-open .wp-block-navigation-item { width: auto; }
+    .ef-navigation .is-menu-open .wp-block-navigation-item__content { padding: 0; text-decoration: underline; text-underline-offset: 3px; }
+    .ef-navigation .is-menu-open .ef-current > a { background: transparent; }
+    html:has(.ef-navigation .is-menu-open) { overflow: auto; }
+    .ef-hero::after { display: none; }
+}
+
+@media (max-width: 782px) {
+    .ef-sidebar nav.ef-navigation:has(.is-menu-open) > .wp-block-navigation__responsive-container-open { display: none; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { width: 100%; align-self: stretch; background: var(--wp--preset--color--custom-color-4); color: var(--wp--preset--color--custom-color-1); }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content { padding: 0; align-items: stretch; width: 100%; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content > ul.wp-block-navigation__container { flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 10px; width: 100%; font-size: 20px; position: static; margin: 0; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item { width: auto; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close { position: fixed; top: 21px; left: 26px; }
+}
+
+@media (max-width: 782px) {
+    .ef-sidebar:has(.is-menu-open) { padding-inline: 8px; }
+    .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { transform: none; }
+}
+@media (max-width: 782px) { .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { animation: none; transform: none; } }
+
+/* The image belongs to the viewport; its label belongs to the scrolling frame. */
+.ef-hero-frame { position: relative; height: min(879px, 86svh); margin: 0; }
+.ef-hero-frame > .ef-fixed-hero { position: static; width: 100%; height: 0; overflow: visible; margin: 0; }
+.ef-hero-frame > .ef-fixed-hero::after { display: none; }
+.ef-hero-frame > .ef-fixed-hero > img { position: fixed; top: 0; left: var(--ef-sidebar-width); z-index: 0; width: calc(100% - var(--ef-sidebar-width)); height: 100svh; max-height: none; aspect-ratio: auto; object-fit: cover; object-position: center; }
+.ef-hero-frame > .ef-hero-label { position: absolute; z-index: 1; left: 32px; right: auto; bottom: 24px; margin: 0; font-size: 20px; line-height: 1.4; color: #fff; text-shadow: 0 1px 5px #000; }
+.ef-content-surface { position: relative; z-index: 2; background: var(--wp--preset--color--custom-color-5); margin: 0; padding: 0; }
+.ef-content-surface::before { content: ''; position: absolute; top: -32px; left: 0; right: 0; height: 32px; background: linear-gradient(transparent, var(--wp--preset--color--custom-color-5)); pointer-events: none; }
+.ef-content-surface > * { margin-block: 0; }
+.ef-starter-section { padding-top: 90px; }
+.ef-starter-section .ef-section-title { margin-bottom: 0; }
+#accueil, #notre-ecole, #evenements, #cours, #nous-trouver { scroll-margin-top: 24px; }
+.editor-styles-wrapper .ef-hero-frame > .ef-fixed-hero { height: 100%; }
+.editor-styles-wrapper .ef-hero-frame > .ef-fixed-hero > img { position: absolute; left: 0; width: 100%; height: 100%; }
+@media (max-width: 782px) {
+    .ef-hero-frame { height: calc(100vw * 220 / 390); }
+    .ef-hero-frame > .ef-fixed-hero > img { left: 0; top: 67px; width: 100%; height: calc(100vw * 220 / 390); }
+    .ef-hero-frame > .ef-hero-label { left: 18px; right: auto; bottom: 12px; font-size: 14px; }
+    .ef-content-surface::before { display: none; }
+    .ef-starter-section { padding-top: 36px; }
+    #accueil, #notre-ecole, #evenements, #cours, #nous-trouver { scroll-margin-top: 165px; }
+}
+/* Keep the incoming flex layout compatible with the fixed shared sidebar. */
+.ef-layout.is-layout-flex > .ef-main { margin-left: var(--ef-sidebar-width); width: calc(100% - var(--ef-sidebar-width)); flex: 1 1 0%; align-self: stretch; }
+@media (max-width: 782px) {
+    .ef-layout.is-layout-flex { flex-direction: column; align-items: stretch; }
+    .ef-layout.is-layout-flex > .ef-main { margin-left: 0; width: 100%; flex: 1 0 auto; }
+}

@@ -125,13 +125,6 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
-		"blocks": {
-			"core/group": {
-				"color": {
-					"background": "var(--wp--preset--color--custom-color-4)"
-				}
-			}
-		},
 		"color": {
 			"background": "var(--wp--preset--color--custom-color-5)",
 			"text": "#ffffff"
@@ -150,6 +143,23 @@
 				"right": "0rem",
 				"top": "0px"
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--instrument-sans)",
+			"fontWeight": "400",
+			"lineHeight": "1.5"
 		}
-	}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "mon-entete",
+			"title": "Menu de l’école"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Pied de page"
+		}
+	]
 }

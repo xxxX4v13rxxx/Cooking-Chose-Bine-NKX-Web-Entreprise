@@ -1,0 +1,26 @@
+<?php
+/**
+ * Title: Où sommes-nous ? v2
+ * Slug: ecolefortin/o%c3%b9-sommes-nous-v2
+ * Categories: 
+ */
+?>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Où sommes-nous ?","categories":["ecolefortin"]},"className":"ef-location ef-section","layout":{"type":"default"}} -->
+<section class="wp-block-group ef-location ef-section"><!-- wp:heading {"className":"ef-section-title","style":{"typography":{"textAlign":"center"}},"anchor":"nous-trouver"} -->
+<h2 class="wp-block-heading has-text-align-center ef-section-title" id="nous-trouver">Où sommes-nous ?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"ef-location-grid","layout":{"type":"default"}} -->
+<div class="wp-block-group ef-location-grid"><!-- wp:paragraph {"className":"ef-address"} -->
+<p class="ef-address">245, rue King Ouest <br>Sherbrooke (Québec) J1H 1P8</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.454121728189!2d-71.8957052875262!3d45.40018137095235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7b3102cd148a1%3A0x8ca63a12e46c42aa!2s245%20Rue%20King%20Ouest%2C%20Sherbrooke%2C%20QC%20J1H%201P8!5e0!3m2!1sfr!2sca!4v1793211355774!5m2!1sfr!2sca" "height:="" auto;"="" width="420" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<!-- /wp:html -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"ef-building"} -->
+<figure class="wp-block-image size-full ef-building"><img src="/wp-content/themes/Cooking-Chose-Bine-NKX-Web-Entreprise/EcoleFortinTheme/Images/facade-ecole.png" alt="Façade de l’École de musique Fortin"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->

@@ -113,7 +113,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
 }
 
 @media (max-width: 782px) {
-    .ef-sidebar:has(.is-menu-open) { padding-inline: 8px; }
+    .ef-sidebar:has(.is-menu-open) { padding-inline: 0; }
     .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { transform: none; }
 }
 @media (max-width: 782px) { .ef-sidebar nav.ef-navigation .wp-block-navigation__responsive-container.is-menu-open { animation: none; transform: none; } }

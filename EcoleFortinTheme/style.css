@@ -170,3 +170,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--wp--preset--col
         fill: currentColor;
     }
 }
+
+/*Fait par Kelyan: change le style du label du hero */
+.ef-hero-label {
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 10px;
+}

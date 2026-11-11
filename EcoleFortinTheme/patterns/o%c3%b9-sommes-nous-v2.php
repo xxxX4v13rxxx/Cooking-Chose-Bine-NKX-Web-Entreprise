@@ -12,7 +12,7 @@
 
 <!-- wp:group {"className":"ef-location-grid","layout":{"type":"default"}} -->
 <div class="wp-block-group ef-location-grid"><!-- wp:paragraph {"className":"ef-address"} -->
-<p class="ef-address">245, rue King Ouest <br>Sherbrooke (Québec) J1H 1P8</p>
+<p class="ef-address">245, rue King Ouest Sherbrooke (Québec) J1H 1P8</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->

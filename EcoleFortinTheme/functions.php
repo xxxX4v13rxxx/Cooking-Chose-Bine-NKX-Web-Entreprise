@@ -47,3 +47,14 @@ function ecolefortin_current_navigation_link( $content, $block ) {
     return $content;
 }
 add_filter( 'render_block_core/navigation-link', 'ecolefortin_current_navigation_link', 10, 2 );
+
+add_action( 'wp_head', 'my_google_analytics', 10 );
+function my_google_analytics() { ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NHB3B52N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<?php }
